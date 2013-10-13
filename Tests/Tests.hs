@@ -63,6 +63,8 @@ tests = TestList
             , testSuffixArray "aaba" [3, 0, 1, 2]
             , testSuffixArray "abc" [0, 1, 2]
             , testSuffixArray "eefdcba" [6, 5, 4, 3, 0, 1, 2]
+            , testSuffixArray "ababcabab" [7, 5, 0, 2, 8, 6, 1, 3, 4]
+            , testSuffixArray "ababcabab\0" [9, 7, 5, 0, 2, 8, 6, 1, 3, 4]
             ]
         , TestLabel "composeLists tests" $ TestList
             [ testComposeLists [0, 1, 2] [0, 1, 2] [0, 1, 2]
